@@ -1,0 +1,48 @@
+<div class="container">
+
+    <h1 class="mt-3">Contact List</h1>
+  
+    <div class="d-flex justify-content-end mt-3">
+      <a [routerLink]="['/contacts/add']" class="btn btn-primary">Add Contact</a>
+    </div>
+  
+    <ng-container *ngIf="contacts$ | async as contacts">
+      <table class="table table-bordered mt-3">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th> 
+            <th>PhoneNumber</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>PostalCode</th>
+            <th> </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let contact of contacts">
+            <td>{{contact.id}}</td>
+            <td>{{contact.firstName}}</td>
+            <td>{{contact.lastName}}</td>
+            <td>{{contact.email}}</td>
+            <td>{{contact.phoneNumber}}</td>
+            <td>{{contact.address}}</td>
+            <td>{{contact.city}}</td>
+            <td>{{contact.state}}</td>
+            <td>{{contact.country}}</td>
+            <td>{{contact.postalCode}}</td>
+            <td>
+              <a class="btn btn-light" [routerLink]="['/contacts/edit', contact.id]">Edit</a>
+              
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </ng-container>
+  
+  </div>
+  
