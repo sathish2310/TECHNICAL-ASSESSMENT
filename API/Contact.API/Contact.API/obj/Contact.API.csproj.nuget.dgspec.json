@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Sathish\\Assessment\\API\\Contact.API\\Contact.API\\Contact.API.csproj": {}
+    "C:\\API\\TECHNICAL-ASSESSMENT\\API\\Contact.API\\Contact.API\\Contact.API.csproj": {}
   },
   "projects": {
-    "C:\\Sathish\\Assessment\\API\\Contact.API\\Contact.API\\Contact.API.csproj": {
+    "C:\\API\\TECHNICAL-ASSESSMENT\\API\\Contact.API\\Contact.API\\Contact.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sathish\\Assessment\\API\\Contact.API\\Contact.API\\Contact.API.csproj",
+        "projectUniqueName": "C:\\API\\TECHNICAL-ASSESSMENT\\API\\Contact.API\\Contact.API\\Contact.API.csproj",
         "projectName": "Contact.API",
-        "projectPath": "C:\\Sathish\\Assessment\\API\\Contact.API\\Contact.API\\Contact.API.csproj",
+        "projectPath": "C:\\API\\TECHNICAL-ASSESSMENT\\API\\Contact.API\\Contact.API\\Contact.API.csproj",
         "packagesPath": "C:\\Users\\suriyakumar\\.nuget\\packages\\",
-        "outputPath": "C:\\Sathish\\Assessment\\API\\Contact.API\\Contact.API\\obj\\",
+        "outputPath": "C:\\API\\TECHNICAL-ASSESSMENT\\API\\Contact.API\\Contact.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\suriyakumar\\AppData\\Roaming\\NuGet\\NuGet.Config",

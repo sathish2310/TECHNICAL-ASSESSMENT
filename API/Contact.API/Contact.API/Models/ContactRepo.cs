@@ -35,7 +35,7 @@ namespace Contact.API.Models
 
         public async Task<IEnumerable<Contact>> GetAllAsync()
         {
-            return await dbContext.Contacts.ToListAsync();
+            return await dbContext.Contacts.OrderByDescending(x => x.Id).ToListAsync();
         }
 
         public async Task<Contact?> GetById(Guid id)

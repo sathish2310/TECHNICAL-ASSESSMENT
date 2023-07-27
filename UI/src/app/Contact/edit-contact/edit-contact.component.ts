@@ -64,6 +64,7 @@ export class EditContactComponent implements OnInit, OnDestroy {
         }
       });
     }
+    alert("Updated Successfully");
   }
 
   onDelete(): void {
@@ -75,6 +76,7 @@ export class EditContactComponent implements OnInit, OnDestroy {
         }
       })
     }
+    alert("Deleted Successfully");
   }
 
   ngOnDestroy(): void {

@@ -6,11 +6,11 @@
       <a [routerLink]="['/contacts/add']" class="btn btn-primary">Add Contact</a>
     </div>
   
-    <ng-container *ngIf="contacts$ | async as contacts">
+    <ng-container  *ngIf="contacts$ | async as contacts" >
       <table class="table table-bordered mt-3">
-        <thead>
+        <thead class="table-info">
           <tr>
-            <th>Id</th>
+             <!--  <th>Id</th> -->
             <th>FirstName</th>
             <th>LastName</th>
             <th>Email</th> 
@@ -25,7 +25,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let contact of contacts">
-            <td>{{contact.id}}</td>
+            <!-- <td>{{contact.id}}</td>-->
             <td>{{contact.firstName}}</td>
             <td>{{contact.lastName}}</td>
             <td>{{contact.email}}</td>
@@ -42,6 +42,9 @@
           </tr>
         </tbody>
       </table>
+      
+  
+  <div *ngIf="contacts.length === 0"> No records found</div>
     </ng-container>
   
   </div>

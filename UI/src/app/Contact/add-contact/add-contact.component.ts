@@ -11,10 +11,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./add-contact.component.css']
 })
 export class AddContactComponent implements OnDestroy {
-
   model: AddContactRequest;
+  
   private addContactSubscribtion?: Subscription;
-
   constructor(private contactService: ContactService,
     private router: Router) {
     this.model = {
@@ -29,18 +28,16 @@ export class AddContactComponent implements OnDestroy {
       postalCode:''
     };
   }
-
-
   onFormSubmit() {
     this.addContactSubscribtion = this.contactService.addContact(this.model)
     .subscribe({
       next: (response) => {
-        this.router.navigateByUrl('/contacts');
         
+        this.router.navigateByUrl('/contacts');
       }
     })
+    alert("Saved Successfully");
   }
-
   ngOnDestroy(): void {
     this.addContactSubscribtion?.unsubscribe();
   }

@@ -13,7 +13,6 @@ const routes: Routes = [
     path: 'contacts',
     component: ContactListComponent
   },
-
   {
     path: 'contacts/add',
     component: AddContactComponent
